@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9af29e1507.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- GSAP Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <nav class="nav">
+            <span class="logo">Pratibha</span>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sevices">Expertise</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars fas"onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="container">
+            <div class="hero">
+                <div class="header-text">
+                    <h2>Hello there!</h2>
+                    <h1>I'm <span>Pratibha</span></h1>
+                    <h2>A <span class="multiple-text"></span></h2>
+                    <a href="#" style="color: white;" class="btn btn-2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Personal-Portfolio-main/Images/pratibhapic.png" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Motivated and detail-oriented entry-level Frontend Developer with a solid foundation in HTML, CSS, JavaScript, and React.</p>
+<p>Passionate about building responsive, user-friendly web interfaces and eager to apply modern frontend practices to real-world projects. Committed to continuous learning and growth in a fast-paced development environment.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <!-- <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX Designer</span><br>Designing User freindly Interfaces</li>
+                            <li><span>Frontend Development</span><br>Bringing Imagination to the Screen</li>
+                            <li><span>Web Development</span><br>Creating fully functional Web-Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <div style="display: flex; flex-direction: column; gap: 5px;">
+                            <h3>IDeaS - A SAS Company, Pune</h3>
+                            <p><strong>Designation:</strong> Trainee - Associate Software Engineer</p>
+                            <p><strong>Duration:</strong> July - Sept 2023</p>
+                            <p >
+                            As a Trainee Associate Software Engineer, I contributed to the design and development of an AI-powered Insight & Response Tool. 
+                            This solution was built to deliver intelligent insights and generate contextual responses based on dynamic user inputs, 
+                            empowering data-driven decision-making and enhancing business efficiency.
+                            </p>
+                        </div>
+
+                        <a href="https://drive.google.com/file/d/19sBSEqc-02pxkSJYuKxVssr2kK6leoZD/view" style="display: inline-block; color: #BC6941; text-decoration: none; border: 1px solid #BC6941; padding: 10px 20px; border-radius: 5px; font-weight: bold;margin-top: 20px;">View Certificate</a>
+                      </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>From AKTU</li>
+                            <li><span>12</span><br>CBSE</li>
+                            <li><span>10</span><br>CBSE</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+
+    <div id="sevices">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa-solid fa-pen-nib"></i> <!-- Better icon for UI/UX Design -->
+                    <h2>UI/UX Design</h2>
+                    <p>Designing seamless, intuitive, and visually striking user experiences using tools like Figma. I blend creativity with usability to bring interfaces to life.</p>
+                  </div>
+                  
+                  <div class="service">
+                    <i class="fa-solid fa-laptop-code"></i> <!-- More relevant icon for frontend coding -->
+                    <h2>Frontend Development</h2>
+                    <p>Building fast, responsive, and interactive web apps using HTML, CSS, JavaScript, React, and Tailwind CSS — all with clean, scalable code and a strong focus on performance</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIO SECTION -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="Images/work-2.png" alt="work-3">
+                    <div class="layer">
+                      <h3>Camperz</h3>
+                      <p>A visually engaging travel landing page crafted with Next.js </p>
+                      <a href="https://camperz-one.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/work-1.png" alt="work-2">
+                    <div class="layer">
+                      <h3>GymiFY</h3>
+                      <p>A clean and modern gym website interface built with HTML, CSS, and JavaScript for a strong online presence.</p>
+                      <a href="https://gymi-fy.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                  
+                
+                <div class="work">
+                    <img src="Images/work-3.png" alt="work-3">
+                    <div class="layer">
+                      <h3>Portfolio</h3>
+                      <p>An interactive and modern portfolio site showcasing creative work, projects, and skills.</p>
+                      <a href="/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Pratibha2208" class="btn">See more</a>
+
+        </div>
+    </div>
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="mailto:pratishri123@gmail.com" style="text-decoration: none; color: black;"><i class="fa-solid fa-paper-plane"></i>pratishri123@gmail.com</a></p>
+                <p><a href="tel:+918470907622" style="text-decoration: none; color: black;"><i class="fa-solid fa-square-phone"></i>+91 8470907622 </a></p>
+                <div class="social-icons">
+                    <a href="https://github.com/Pratibha2208"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pratibha-shrivastava-b35962251"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#"class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form" method="post" action="mailto:pratishri123@gmail.com">
+                    <input type="text" id="Name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Pratibha Shrivastava. Made with <i class="fa-solid fa-heart"></i> by Pratibha </p>
+    </div>
+</div>
+<script src="index.js"></script>
+
+</body>
+
+</html>
