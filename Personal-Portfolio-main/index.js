@@ -53,7 +53,7 @@ var header = document.querySelector(".nav")
 var logo = document.querySelector(".logo")
 document.addEventListener('scroll',()=>{
     var scroll_position = window.scrollY;
-    if (scroll_position < 300) {
+    if (scroll_position < 200) {
         header.style.backgroundColor= 'transparent';
         header.style.color='#fff';
         logo.style.color='#fff';
